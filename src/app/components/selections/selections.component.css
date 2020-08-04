@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'premier_leagueregular';
+    src: url('../../../assets/fonts/webfontkit-20200731-230126/barclays_premier_league-webfont.woff2') format('woff2'),
+         url('../../../assets/fonts/webfontkit-20200731-230126/barclays_premier_league-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.selection-main-container{
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'premier_leagueregular';
+    
+    
+}
+.selections{
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+    
+    box-shadow: 0px 0px 5px 0px  rgb(68, 23, 110);
+}
+.container{
+    margin: 10px 40px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(233,0,82);
+}
+p{
+    text-shadow: 0px 0px 1px black
+}
+#teams{
+    background-image: url(../../../assets/images/epl-teams.jpg);
+}
+#fixtures{
+    background-image: url(../../../assets/images/epl-fixtures.jpg);
+}
+#league-table{
+    background-image: url(../../../assets/images/epl-league-table.jpg);
+}
