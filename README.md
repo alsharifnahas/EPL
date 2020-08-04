@@ -1,4 +1,5 @@
 # EplApp
+EPL is a web application that displays the english premier league's teams including their fixtures. Also, it has the option to display the league table. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
