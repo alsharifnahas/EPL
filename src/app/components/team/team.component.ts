@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Team } from '../../module/Team';
 import { TeamsService } from '../../services/teams.service';
+import { SubHeaderServiceService } from '../../services/sub-header-service.service'
 
 @Component({
   selector: 'app-team',
@@ -9,11 +10,12 @@ import { TeamsService } from '../../services/teams.service';
 })
 export class TeamComponent implements OnInit {
   teams: Team[];
-  constructor(private teamsService: TeamsService) { }
+  constructor(private teamsService: TeamsService, private subHeaderService: SubHeaderServiceService) { }
 
   async ngOnInit() {
     let data: any;
     data = await this.teamsService.getTeam();
     this.teams = data.data.table;
+    this.subHeaderService.setTitle('Teams')
   }
 }

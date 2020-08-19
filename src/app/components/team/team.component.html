@@ -1,1 +1,18 @@
-<app-league-table *ngFor=' let team of teams' [team]="team"></app-league-table>
+<div class="main-team-container">
+    <app-sub-header></app-sub-header>
+    <div class="all-teams-container">
+        <div class="team-container" *ngFor="let team of teams">
+            <img class="staduim-image" src="../../../assets/images/staduim-background-image.jpg">
+            <div class="epl-image-container">
+                <img class="epl-image" src="../../../assets/images/epl-lion-image.png">
+            </div>
+            <div class="team-name-container">
+                <span>{{team.name}}</span>
+            </div>
+            <div class="links-contianer">
+                <a class="link">Team Fixtures</a>
+                <a class="link">Team Position</a>
+            </div>
+        </div>
+    </div>
+</div>

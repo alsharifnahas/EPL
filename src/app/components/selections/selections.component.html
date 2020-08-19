@@ -1,14 +1,17 @@
 <div class="selection-main-container">
-    <div class="container">
-        <div class="selections" id="teams"></div>
-        <p>Teams</p>
+    <div [routerLink]="['/team']" class="container">
+        <img (mouseover)="hoverOver($event)" (mouseout)="hoverOut($event)" class="selection-image"
+            src="../../../assets/images/epl-teams.jpg">
+        <span class="selection-name">Teams</span>
+    </div>
+    <div [routerLink]="['/league-table']" class="container">
+        <img (mouseover)="hoverOver($event)" (mouseout)="hoverOut($event)" class="selection-image"
+            src="../../../assets/images/epl-league-table.jpg">
+        <span class="selection-name">League Table</span>
     </div>
     <div class="container">
-        <div class="selections" id="league-table"></div>
-        <p>League Table</p>
-    </div>
-    <div class="container">
-        <div class="selections" id="fixtures"></div>
-        <p>League Fixtures</p>
+        <img (mouseover)="hoverOver($event)" (mouseout)="hoverOut($event)" class="selection-image"
+            src="../../../assets/images/epl-fixtures.jpg">
+        <span class="selection-name">League Fixtures</span>
     </div>
 </div>

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TeamsService {
-  teamsUrl: string = 'https://cors-anywhere.herokuapp.com/http://livescore-api.com/api-client/leagues/table.json?key=4Z5yTooB8Gsqz1DF&secret=s8pud67w5RTjPvUTv0spoQ0wwtW6vALX&league=25&season=2';
+  teamsUrl: string = 'https://cors-anywhere.herokuapp.com/http://livescore-api.com/api-client/leagues/table.json?key=5YQKl3fPBERaWw5W&secret=uZVhBe2CDhoHH3KM1BwnFMchq4rnAxk5&league=25&season=2';
   constructor(private http: HttpClient) { }
 
 
@@ -16,6 +16,7 @@ export class TeamsService {
     return this.http.get<any>(this.teamsUrl);
   }
   getTeam(): Promise<any> {
+
     return this.getData().toPromise();
   }
 
